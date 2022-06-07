@@ -1,0 +1,62 @@
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.body--container {
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+header .main--header {
+  text-align: center;
+  width: 100%;
+  background-color: #007BFF;
+  color: white;
+  padding: 0.5rem;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header nav a:link, header nav a:visited {
+  font-size: 2rem;
+  text-decoration: none;
+  transition: 0.2s;
+  color: #007BFF;
+  padding: 0.3rem 1rem;
+  width: 33%;
+}
+header nav a:link:hover, header nav a:link:active, header nav a:link:focus, header nav a:visited:hover, header nav a:visited:active, header nav a:visited:focus {
+  background-color: #007BFF;
+  color: white;
+}
+
+.contenu-ex {
+  display: none;
+}
+
+.contenu-ex-active {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=style.css.map */

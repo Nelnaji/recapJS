@@ -1,0 +1,44 @@
+header{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    // background-color: blue;
+    gap: 2rem;
+    .main--header{
+        text-align: center;
+        width: 100%;
+        background-color: #007BFF;
+        color: white;
+        padding: .5rem;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+               
+        a:link, a:visited{
+            font-size: 2rem;
+            text-decoration: none;
+            transition: .2s;
+            color: #007BFF;
+            padding: .3rem 1rem;
+            width: 33%;
+        &:hover, 
+        &:active, &:focus{
+            background-color: #007BFF;
+            color: white;
+        }
+
+        }
+    }
+}
+
+.contenu-ex{
+    display: none;
+}
+
+.contenu-ex-active{
+    display: flex;
+    flex-direction: column;
+}
