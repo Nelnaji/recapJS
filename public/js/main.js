@@ -1,20 +1,25 @@
-const navContainer = document.querySelector('.nav--bar');
-const tabs = document.querySelectorAll('.nav__tab');
-const tabsContent = document.querySelectorAll('.contenu-ex');
+import { changeTabs } from './modules/nav.js'
+import {changeExo1} from './modules/exo1.js'
 
-navContainer.addEventListener('click', function (e) {
-    const clicked = e.target.closest('.nav__bar');
-  console.log(clicked);
-    // Guard clause
-    if (!clicked) return;
-  
-    // Remove active classes
-      tabsContent.forEach(c => c.classList.remove('contenu-ex-active'));
-  
-  
-    // Activate content area
-    document
-      .querySelector(`.contenu-ex-${clicked.dataset.tab}`)
-      .classList.add('contenu-ex-active');
-  });
-  
+import { changeExo3} from './modules/exo3.js'
+import {changeExo4} from './modules/exo4.js'
+
+// fonction pour la navigation.
+changeTabs();
+
+// fonction Exo 1
+changeExo1();
+// fonction Exo 3
+changeExo3();
+
+// fonction Exo 4
+
+changeExo4()
+
+// fonction Exo 5
+
+// changeExo5()
+
+// fonction Exo 6
+
+// changeExo6()

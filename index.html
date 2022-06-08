@@ -15,22 +15,22 @@
     <header>
         <h1 class="main--header">Recapitulatif manipulation DOM</h1>
 
-        <nav class="nav--bar">
-            <a classe="nav-btn nav__tab nav__tab-1" href="#" id="ex-1" data-tab="1">Exercice 1</a>
-            <a classe="nav-btn nav__tab nav__tab-2" href="#" id="ex-2" data-tab="2">Exercice 2</a>
-            <a classe="nav-btn nav__tab nav__tab-3" href="#" id="ex-3" data-tab="3">Exercice 3</a>
-            <a classe="nav-btn nav__tab nav__tab-4" href="#" id="ex-4" data-tab="4">Exercice 4</a>
-            <a classe="nav-btn nav__tab nav__tab-5" href="#" id="ex-5" data-tab="5">Exercice 5</a>
-            <a classe="nav-btn nav__tab nav__tab-6" href="#" id="ex-6" data-tab="6">Exercice 6</a>
+        <nav class="nav__bar">
+            <a class="nav-btn nav__bar-tab nav__bar-tab-1" href="#" id="ex-1" data-tab="1">Exercice 1</a>
+            <a class="nav-btn nav__bar-tab nav__bar-tab-2" href="#" id="ex-2" data-tab="2">Exercice 2</a>
+            <a class="nav-btn nav__bar-tab nav__bar-tab-3" href="#" id="ex-3" data-tab="3">Exercice 3</a>
+            <a class="nav-btn nav__bar-tab nav__bar-tab-4" href="#" id="ex-4" data-tab="4">Exercice 4</a>
+            <a class="nav-btn nav__bar-tab nav__bar-tab-5" href="#" id="ex-5" data-tab="5">Exercice 5</a>
+            <a class="nav-btn nav__bar-tab nav__bar-tab-6" href="#" id="ex-6" data-tab="6">Exercice 6</a>
         </nav>
     </header>
     
 <main>
 
-<div class="contenu-ex contenu-ex-1 contenu-ex-active">
-    <h2 class="titre-ex-2">Le titre</h2>
-    <p></p>
-    <ul>
+<div class="contenu__ex contenu__ex-1 contenu__ex-active">
+    <h2 class="contenu__ex-1-titre">Le titre</h2>
+    <p>Liste de propriétés et méthodes à retrouver dans la documentation</p>
+    <ul class="contenu__ex-1-list">
         <li>innerText</li>
         <li>innerHTML</li>
         <li>querySelector()</li>
@@ -39,16 +39,31 @@
         <li>classList</li>
     </ul>
 
-    <p>Changer le contenu du h2 par "le titre modifié"
-        changer la couleur du h2 (la couleur que vous voulez)
-        ajouter une class background bootstrap au h2
-    </p>
+    <p>Changer le contenu du h2 par "le titre modifié"</p>
+        <p> Changer la couleur du h2 (la couleur que vous voulez)</p>
+        <p>ajouter une class background bootstrap au h2 </p>
+    
 </div>
-<div class="contenu-ex contenu-ex-2"><p>contenu exercice 2</p></div>
-<div class="contenu-ex contenu-ex-3"><p>contenu exercice 3</p></div>
-<div class="contenu-ex contenu-ex-4"><p>contenu exercice 4</p></div>
-<div class="contenu-ex contenu-ex-5"><p>contenu exercice 5</p></div>
-<div class="contenu-ex contenu-ex-6"><p>contenu exercice 6</p></div>
+<div class="contenu__ex contenu__ex-2"><p>Mettre un écouteur d'evenements dans les boutons de la nav et changer le panel en conséquence.</p></div>
+<div class="contenu__ex contenu__ex-3"></div>
+<div class="contenu__ex contenu__ex-4"><h2>Deplacer les elements</h2>
+    <div class="box-container">
+
+        <div class="blue-box left-box">
+            <div class="inner-box inner-box-active"></div>
+        </div>
+        <div class="blue-box right-box">
+            <div class="inner-box"></div>
+        </div>
+    </div>
+<div class="button-container">
+
+    <button class="btn-counter change-place">Changer de placer</button>
+    <button class="btn-counter click-counter">Nombre de clicks <span class="counter">0</span></button>
+</div>
+</div>
+<div class="contenu__ex contenu__ex-5"><p>contenu exercice 5</p></div>
+<div class="contenu__ex contenu__ex-6"><p>contenu exercice 6</p></div>
 
 </main>
 
