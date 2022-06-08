@@ -1,9 +1,8 @@
-import { changeTabs } from './modules/nav.js'
+import {changeTabs} from './modules/nav.js'
 import {changeExo1} from './modules/exo1.js'
-
-import { changeExo3} from './modules/exo3.js'
+import {changeExo3} from './modules/exo3.js'
 import {changeExo4} from './modules/exo4.js'
-
+import {changeExo5} from './modules/exo5.js'
 // fonction pour la navigation.
 changeTabs();
 
@@ -18,7 +17,7 @@ changeExo4()
 
 // fonction Exo 5
 
-// changeExo5()
+changeExo5()
 
 // fonction Exo 6
 

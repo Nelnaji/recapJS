@@ -8,7 +8,7 @@ const rightBox = document.querySelector('.right-box');
 btnChange.addEventListener('click', ()=> {
     clickCounter++;
     counter.innerText = clickCounter;
-    
-
-})
-}
+   leftBox.classList.toggle('inner-box-active');
+   rightBox.classList.toggle('inner-box-active');
+});
+};
