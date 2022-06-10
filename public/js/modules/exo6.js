@@ -15,60 +15,52 @@ export const changeExo6 = () => {
   // /////////////////////////// //
   const gridCalculatrice = document.querySelector(".calculatrice-2-grid");
   const btnCalculatrice = document.querySelector(".btn-calculatrice");
-  const btnResultat = document.querySelector(".calculatrice-2-resultat");
+  const btnResultat = document.querySelector(".calculatrice-2-preresultat");
   const inputCalc2 = document.querySelector(".calculatrice-2-input");
-  const calculResultat = document.querySelector(".calcul-resultat");
-  const resultatFinal = document.querySelector(".resultat-final");
+  const calcul2Preresultat = document.querySelector(".calculatrice-2-preresultat");
+  const resultatFinal = document.querySelector(".calculatrice-2-resultat-final");
+  const btnResultatFinal = document.querySelector('.btn-calculatrice-egalite');
   let nombre1;
   let nombre2;
 
   gridCalculatrice.addEventListener("click", (e) => {
     const clicked = e.target.closest(".btn-calculatrice");
-    console.log(clicked);
+
     if (!clicked) return;
 
-    console.log(clicked.dataset.tab);
+
     switch (clicked.dataset.tab) {
       case "1":
-        inputCalc2.value += 1;
-        btnResultat.innerText += 1;
+        calcul2Preresultat.innerText += 1;
+        nombre1 +=1;
         break;
       case "2":
-        inputCalc2.value += 2;
-        btnResultat.innerText += 2;
+        calcul2Preresultat.innerText += 2;
         break;
       case "3":
-        inputCalc2.value += 3;
-        btnResultat.innerText += 3;
+        calcul2Preresultat.innerText += 3;
         break;
       case "4":
-        inputCalc2.value += 4;
-        btnResultat.innerText += 4;
+        calcul2Preresultat.innerText += 4;
         break;
       case "5":
-        inputCalc2.value += 5;
-        btnResultat.innerText += 5;
-        break;
-      case "0":
-        inputCalc2.value += 0;
-        btnResultat.innerText += 0;
+        calcul2Preresultat.innerText += 5;
         break;
       case "6":
-        inputCalc2.value += 6;
-        btnResultat.innerText += 6;
+        calcul2Preresultat.innerText += 6;
         break;
       case "7":
-        inputCalc2.value += 7;
-        btnResultat.innerText += 7;
+        calcul2Preresultat.innerText += 7;
         break;
       case "8":
-        inputCalc2.value += 8;
-        btnResultat.innerText += 8;
+        calcul2Preresultat.innerText += 8;
         break;
       case "9":
-        inputCalc2.value += 9;
-        btnResultat.innerText += 9;
+        calcul2Preresultat.innerText += 9;
         break;
+        case "0":
+          calcul2Preresultat.innerText += 0;
+          break;
       case "/":
         btnResultat.innerText += "/";
         break;
@@ -86,4 +78,10 @@ export const changeExo6 = () => {
         break;
     }
   });
+
+  btnResultatFinal.addEventListener('click', ()=>{
+    const preresultat = eval(calcul2Preresultat.innerText);
+    resultatFinal.innerText = preresultat;
+  })
+
 };
